@@ -34,4 +34,12 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
+Route::get('/dashboard/posts', function () {
+    return view('dashboard.posts.index');
+})->middleware(['auth', 'verified'])->name('dashboard.posts.index');
+
+Route::get('/dashboard/categories', function () {
+    return view('dashboard.categories.index');
+})->middleware(['auth', 'verified'])->name('dashboard.categories.index');
+
 require __DIR__ . '/auth.php';
