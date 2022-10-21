@@ -22,12 +22,14 @@
                     </x-nav-link>
                 </div>
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-nav-link :href="route('dashboard.posts.index')" :active="request()->routeIs('dashboard.posts.index')">
+                    <x-nav-link :href="route('dashboard.posts.index')"
+                        :active="request()->routeIs('dashboard.posts.index')">
                         {{ __('Posts') }}
                     </x-nav-link>
                 </div>
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-nav-link :href="route('dashboard.categories.index')" :active="request()->routeIs('dashboard.categories.index')">
+                    <x-nav-link :href="route('dashboard.categories.index')"
+                        :active="request()->routeIs('dashboard.categories.index')">
                         {{ __('Categories') }}
                     </x-nav-link>
                 </div>
@@ -94,10 +96,12 @@
             <x-responsive-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                 {{ __('Dashboard') }}
             </x-responsive-nav-link>
-            <x-responsive-nav-link :href="route('posts')" :active="request()->routeIs('posts')">
+            <x-responsive-nav-link :href="route('dashboard.posts.index')"
+                :active="request()->routeIs('dashboard.posts.index')">
                 {{ __('Posts') }}
             </x-responsive-nav-link>
-            <x-responsive-nav-link :href="route('categories')" :active="request()->routeIs('categories')">
+            <x-responsive-nav-link :href="route('dashboard.categories.index')"
+                :active="request()->routeIs('dashboard.categories.index')">
                 {{ __('Categories') }}
             </x-responsive-nav-link>
         </div>
