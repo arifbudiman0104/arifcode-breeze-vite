@@ -36,7 +36,15 @@
                         {{ __('About') }}
                     </x-nav-link>
                 </div>
-
+                {{-- Github button --}}
+                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                    <x-nav-link :href="url('https://github.com/arifbudimanarrosyid/arifcode-breeze-vite')" target="_blank">
+                        {{-- githb svg --}}
+                        <img src="https://github.githubassets.com/images/modules/site/icons/footer/github-mark.svg"
+                            width="20" height="20" class=" mr-3" loading="lazy" decoding="async" alt="GitHub mark">
+                        {{ __('Github') }}
+                    </x-nav-link>
+                </div>
                 {{-- @auth
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
