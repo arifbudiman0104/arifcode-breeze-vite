@@ -1,7 +1,8 @@
 <?php
 
-use App\Http\Controllers\PostController;
+use App\Models\Category;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PostController;
 
 /*
 |--------------------------------------------------------------------------
@@ -29,7 +30,7 @@ Route::get('/post/{post:slug}', [PostController::class, 'show'])->name('posts.sh
 
 // Route Categories
 Route::get('/categories', function () {
-    return view('categories');
+    return view('categories', ['categories' => Category::all()]);
 })->name('categories');
 
 // Route About
