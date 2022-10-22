@@ -17,8 +17,8 @@
 
                 <div
                     class="mt-6 p-6  prose prose-zinc dark:prose-invert mx-auto
-                lg:prose-lg prose-a:text-red-400
-                prose-blockquote:text-red-700 prose-code:text-red-400 prose-pre:text-red-400 prose-blockquote:bg-red-50 prose-blockquote:border-red-400 hover:prose-a:text-red-500">
+                lg:prose-lg prose-a:text-red-400 prose-h2:text-red-400
+                prose-blockquote:text-red-700 prose-code:text-red-300 prose-pre:text-red-400 prose-blockquote:bg-red-50 prose-blockquote:border-red-400 hover:prose-a:text-red-500">
                     <img src="{{ asset('img/1.jpg') }}" alt="" class="rounded-lg aspect-auto max-h-80 w-full">
                     <div>
                         <span
@@ -38,6 +38,7 @@
                                 {{\Carbon\Carbon::parse($post->published_at)->diffForHumans() }}
                             </span>
                         </p>
+                        <p>{{ $post->excerpt }}</p>
                     </div>
                     {!! $post->content !!}
                 </div>

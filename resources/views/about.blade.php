@@ -6,11 +6,37 @@
     </x-slot>
 
     <div class="py-5">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white dark:bg-gray-900 overflow-hidden shadow-sm sm:rounded-lg">
-                <div
-                    class="p-6 bg-white h-screen dark:bg-gray-900 dark:text-white border-b border-gray-200 dark:border-gray-800">
-                    Welcome to the About page!
+        <div class="max-w-7xl mx-auto sm:px-6  lg:px-8">
+            <div class="bg-white dark:bg-gray-900 py-40 sm:py-20 overflow-hidden shadow-sm sm:rounded-lg">
+                <div class=" flex justify-center items-center max-w-40  bg-white min-h-xl dark:bg-gray-900 dark:text-white ">
+
+                    <div class="flex justify-center items-center flex-col px-5 sm:px-12 md:px-32 lg:px-60  ">
+                        <h1 class="text-2xl font-bold">Hi there.. </h1>
+                        <h1 class="text-2xl font-bold">I hope you like the website.</h1>
+                        <p class="pt-5 text-lg">You can also contribute to this blog as a writter or developer or both,
+                            the repository of this blog is on the navbar.</p>
+                        <h1 class="pt-5 text-2xl font-bold">Well Hello, </h1>
+                        <p class="pt-5 text-lg">I'm Arif Budiman Arrosyid, a fullstack web developer from
+                            Indonesia. Code since 2018, I'm studying Information Technology at <a
+                                href="https://www.umy.ac.id/" class="text-red-500 hover:text-red-700" target="_blank">
+                                Muhammadiyah
+                                University
+                                of Yogyakarta</a>.</p>
+                        <p class="pt-5 text-lg">I
+                            like to learn about web design and web development. I'm currently learning Laravel and
+                            Tailwind CSS. Check out my <a href="https://github.com/arifbudimanarrosyid"
+                                class="text-red-500 hover:text-red-700" target="_blank">Github</a>
+                            repo to see the project I am currently working on.</p>
+                        <p class="pt-5 text-lg">I also like potrait photography, you can check out my <a
+                                href="https://www.instagram.com/arifbudimanarrosyid/"
+                                class="text-red-500 hover:text-red-700" target="_blank">Instagram</a>
+                            account to see my photos. Photographer is my side job.</p>
+
+                        </p>
+
+
+
+                    </div>
                 </div>
             </div>
         </div>
