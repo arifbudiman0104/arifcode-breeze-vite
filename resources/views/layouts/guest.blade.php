@@ -13,6 +13,8 @@
     <link rel="preconnect" href="https://rsms.me/">
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
 
+    {{-- <link rel="stylesheet" href="{{ asset('build/assets/app.6dd90992.css') }}"> --}}
+
     <!-- Fonts Nunito -->
     {{--
     <link rel="stylesheet" href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap"> --}}
