@@ -1,7 +1,7 @@
 <x-guest-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 dark:text-white leading-tight">
-            {{ __('Posts') }}
+            {{ $title }}
         </h2>
     </x-slot>
 
@@ -26,10 +26,17 @@
                                     d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
                             </svg>
                         </div>
+                        @if (request('category'))
+                        <input type="hidden" name="category" value="{{ request('category') }}">
+                        @endif
+
+                        @if (request('author'))
+                        <input type="hidden" name="author" value="{{ request('author') }}">
+                        @endif
+
                         <input type="text" id="default-search"
                             class="form-control block p-4 pl-10 w-full text-md  text-gray-900 shadow-sm bg-gray-50 rounded-lg border border-gray-50 focus:ring-red-500 focus:border-red-500 dark:bg-gray-900 dark:border-gray-800 dark:placeholder-gray-400 dark:text-white dark:focus:ring-red-500 dark:focus:border-red-500"
-                            placeholder="Search posts.." name="search"
-                            value="{{ request('search') }}">
+                            placeholder="Search posts..." name="search" value="{{ request('search') }}">
                         <button type="submit"
                             class="text-white absolute right-2.5 bottom-2.5 bg-red-400 hover:bg-red-600 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800">Search</button>
                     </div>
@@ -45,14 +52,14 @@
 
                     <div class="relative p-4">
                         <div class="mb-2">
-
-                            <span
-                                class="bg-red-100 text-red-800 text-xs font-semibold mr-2 py-1 px-2 rounded dark:bg-red-200 dark:text-red-900">
+                            <span class="bg-red-100 text-red-800 text-xs font-semibold mr-2 py-1 px-2 rounded
+                                 dark:bg-red-200 dark:text-red-900">
                                 {{
                                 $post->category->name }}
                             </span>
                             <span
-                                class=" bg-gray-100 text-gray-900 text-xs font-medium inline-flex items-center py-1 px-2 rounded dark:bg-gray-700 dark:text-gray-300">
+                                class=" bg-gray-100 text-gray-900 text-xs font-medium inline-flex items-center py-1 px-2
+                                rounded dark:bg-gray-700 dark:text-gray-300">
                                 <svg aria-hidden="true" class="mr-1 w-3 h-3" fill="currentColor" viewBox="0 0 20 20"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd"
@@ -67,7 +74,10 @@
                             $post->title }}</a>
 
 
-                        <p class="text-sm pt-3 pb-3 text-gray-800 dark:text-white">by {{ $post->user->name }}
+                        <p class="text-sm pt-3 pb-3 text-gray-800 dark:text-white ">by <a
+                                href="/posts?author={{$post->author->username}}" class="hover:text-red-400"> {{
+                                $post->author->name
+                                }}</a>
 
                         </p>
 
@@ -91,8 +101,7 @@
 
             @else
             <div class="mb-5 bg-white dark:bg-gray-700 overflow-hidden shadow-sm sm:rounded-lg">
-                <div
-                    class="p-6 bg-white dark:bg-gray-900 dark:text-white ">
+                <div class="p-6 bg-white dark:bg-gray-900 dark:text-white ">
                     <p class="font-bold text-xl">
 
                         No posts found!

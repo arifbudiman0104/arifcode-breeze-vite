@@ -27,7 +27,7 @@
                             $post->category->name }}
                         </span>
                         <h1>{{ $post->title }}</h1>
-                        <p>by {{ $post->user->name }} <span
+                        <p>by {{ $post->author->name }} <span
                                 class=" bg-gray-100 text-gray-900 text-xs font-medium inline-flex items-center px-2 py-0.5 rounded ml-2 dark:bg-gray-700 dark:text-gray-300">
                                 <svg aria-hidden="true" class="mr-1 w-3 h-3" fill="currentColor" viewBox="0 0 20 20"
                                     xmlns="http://www.w3.org/2000/svg">
