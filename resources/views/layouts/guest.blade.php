@@ -48,14 +48,17 @@
                         Arif<span class="text-red-500">Code</span>
                     </a>
                     <span class="block text-sm text-center text-gray-500 dark:text-gray-400">2022 - Made by Arif Budiman
-                        Arrosyid with <a href="https://laravel.com/"
-                            class="text-red-600 hover:underline dark:text-red-500">Laravel 9 </a>, <a
-                            href="https://laravel.com/docs/9.x/starter-kits"
-                            class="text-red-600 hover:underline dark:text-red-500"> Laravel Breeze</a>, <a
-                            href="https://flowbite.com"
-                            class="text-red-600 hover:underline dark:text-red-500">Flowbite</a> and <a
-                            href="https://tailwindcss.com"
-                            class="text-red-600 hover:underline dark:text-red-500">Tailwind CSS</a>.
+                        Arrosyid with
+                        <a href="https://laravel.com/" class="text-red-600 hover:underline dark:text-red-500">
+                            Laravel 9</a>,
+                        <a href="https://laravel.com/docs/9.x/starter-kits" class="text-red-600 hover:underline dark:text-red-500">
+                            Laravel Breeze</a>,
+                        <a href="https://flowbite.com" class="text-red-600 hover:underline dark:text-red-500">
+                            Flowbite</a>
+                        and
+                        <a href="https://tailwindcss.com" class="text-red-600 hover:underline dark:text-red-500">
+                            Tailwind CSS
+                        </a>.
                     </span>
                     <ul class="flex justify-center mt-5 space-x-5">
                         {{-- <li>
