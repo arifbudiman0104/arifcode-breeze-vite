@@ -10,10 +10,14 @@
         <div class="mx-auto max-w-7xl sm:px-6 lg:px-8 ">
             {{-- <section class="pt-24 overflow-hidden pb-36">
                 <div class="container px-4 mx-auto">
-                    <h2 class="mb-4 text-6xl font-bold leading-tight text-center dark:text-white md:text-7xl font-heading tracking-px-n">Latest
+                    <h2
+                        class="mb-4 text-6xl font-bold leading-tight text-center dark:text-white md:text-7xl font-heading tracking-px-n">
+                        Latest
                         from Blog</h2>
-                    <p class="mx-auto mb-24 font-medium leading-relaxed text-center text-gray-600 md:max-w-lg">Lorem ipsum dolor
-                        sit amet, to the consectr adipiscing elit. Volutpat tempor to the condimentum vitae vel purus.</p>
+                    <p class="mx-auto mb-24 font-medium leading-relaxed text-center text-gray-600 md:max-w-lg">Lorem
+                        ipsum dolor
+                        sit amet, to the consectr adipiscing elit. Volutpat tempor to the condimentum vitae vel purus.
+                    </p>
                     <div class="flex flex-wrap -m-8">
                         <div class="w-full p-8 md:w-1/2">
                             <div class="flex flex-wrap -m-4 lg:items-center">
@@ -27,17 +31,20 @@
                                     <div class="md:max-w-xs">
                                         <div class="flex flex-col justify-between h-full">
                                             <div class="mb-6">
-                                                <p class="mb-1.5 text-sm text-gray-500 font-medium uppercase tracking-px">
+                                                <p
+                                                    class="mb-1.5 text-sm text-gray-500 font-medium uppercase tracking-px">
                                                     Product</p>
                                                 <a class="inline-block hover:text-gray-800 hover:underline" href="#">
-                                                    <h3 class="text-xl font-semibold leading-normal dark:text-white">An IT services company that
+                                                    <h3 class="text-xl font-semibold leading-normal dark:text-white">An
+                                                        IT services company that
                                                         can grow your business</h3>
                                                 </a>
                                             </div>
                                             <div class="flex flex-wrap items-center -m-1">
 
                                                 <div class="w-auto p-1">
-                                                    <p class="text-sm font-semibold leading-relaxed dark:text-white">by Wade Warren</p>
+                                                    <p class="text-sm font-semibold leading-relaxed dark:text-white">by
+                                                        Wade Warren</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -86,8 +93,7 @@
             @if ($posts->count())
             <div class="grid w-full grid-cols-1 gap-5 mb-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                 @foreach ($posts as $post )
-                <div
-                    class="w-full overflow-hidden bg-white shadow hover:shadow-md dark:bg-gray-900 sm:rounded-md md:rounded-lg ">
+                <div class="w-full overflow-hidden bg-white shadow-sm dark:bg-gray-900 sm:rounded-md md:rounded-lg ">
                     <img class="object-cover w-full h-48" src="{{ asset('img/3.jpg') }}" alt="Flower and sky" />
 
 
@@ -119,12 +125,7 @@
                                 </svg>
                                 {{\Carbon\Carbon::parse($post->published_at)->diffForHumans() }}
                             </span>
-
                         </p>
-
-
-
-
                         <p class="text-sm text-gray-600 md:text-base dark:text-white">
                             {{$post->excerpt}}
                         </p>
@@ -135,10 +136,7 @@
                 </div>
                 @endforeach
 
-
             </div>
-
-
 
             @else
             <div class="mb-5 overflow-hidden bg-white shadow-sm dark:bg-gray-700 sm:rounded-lg">
@@ -151,7 +149,7 @@
             </div>
             @endif
 
-            <div class="pt-5">
+            <div class="">
                 {{ $posts->links('pagination::tailwind') }}
             </div>
         </div>
