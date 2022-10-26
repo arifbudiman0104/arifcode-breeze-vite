@@ -1,20 +1,20 @@
 <x-guest-layout>
     <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 dark:text-white leading-tight">
+        <h2 class="text-xl font-semibold leading-tight text-gray-800 dark:text-white">
             {{ __('Home') }}
         </h2>
     </x-slot>
 
 
     <div class="py-5">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            {{-- <div class="bg-white dark:bg-slate-700 overflow-hidden shadow-sm sm:rounded-lg">
+        <div class="mx-auto max-w-7xl sm:px-6 lg:px-8">
+            {{-- <div class="overflow-hidden bg-white shadow-sm dark:bg-slate-700 sm:rounded-lg">
                 <div
-                    class="p-6 bg-white dark:bg-slate-700 dark:text-white border-b border-gray-200 dark:border-slate-600">
+                    class="p-6 bg-white border-b border-gray-200 dark:bg-slate-700 dark:text-white dark:border-slate-600">
                     Welcome to the Home page!
                 </div>
                 <div
-                    class="p-6 bg-white dark:bg-slate-700 dark:text-white border-b border-gray-200 dark:border-slate-600">
+                    class="p-6 bg-white border-b border-gray-200 dark:bg-slate-700 dark:text-white dark:border-slate-600">
                     Elit ut laborum Lorem Lorem enim laboris nisi culpa. Magna officia commodo laborum eu tempor ea ex
                     eiusmod adipisicing ex magna id eu incididunt. Excepteur consectetur enim sint officia irure in nisi
                     cupidatat veniam nostrud eu aliquip. Cillum aliquip duis est elit magna nulla reprehenderit
@@ -23,7 +23,7 @@
                     aute Lorem tempor elit duis officia.
                 </div>
             </div> --}}
-            <section class="bg-white dark:bg-gray-900 shadow-sm rounded-t-lg">
+            <section class="bg-white rounded-t-lg shadow-sm dark:bg-gray-900">
                 <div
                     class="grid max-w-screen-xl px-4 pt-8 pb-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 lg:pt-20">
                     <div class="mr-auto place-self-center lg:col-span-7">
@@ -39,7 +39,7 @@
                                 href="https://flowbite.com/blocks/" class="hover:underline">Blocks System</a>.</p>
                         <div class="space-y-4 sm:flex sm:space-y-0 sm:space-x-4">
                             <a href="https://github.com/themesberg/landwind"
-                                class="inline-flex items-center justify-center w-full px-5 py-3 text-sm font-medium text-center text-gray-900 border border-gray-200 rounded-lg sm:w-auto hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:bg-red-200 dark:text-red-900 dark:hover:bg-red-300 dark:border-gray-700  dark:focus:ring-gray-800">
+                                class="inline-flex items-center justify-center w-full px-5 py-3 text-sm font-medium text-center text-gray-900 border border-gray-200 rounded-lg sm:w-auto hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:bg-red-200 dark:text-red-900 dark:hover:bg-red-300 dark:border-gray-700 dark:focus:ring-gray-800">
                                 <svg class="w-4 h-4 mr-2 text-gray-500 dark:text-gray-400"
                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
                                     <!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) -->
@@ -48,7 +48,7 @@
                                 </svg> View on GitHub
                             </a>
                             <a href="https://www.figma.com/community/file/1125744163617429490"
-                                class="inline-flex items-center justify-center w-full px-5 py-3 mb-2 mr-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg sm:w-auto focus:outline-none hover:bg-gray-100 hover:text-red-900 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-red-200 dark:text-red-900 dark:hover:bg-red-300 dark:border-gray-600  ">
+                                class="inline-flex items-center justify-center w-full px-5 py-3 mb-2 mr-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg sm:w-auto focus:outline-none hover:bg-gray-100 hover:text-red-900 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-red-200 dark:text-red-900 dark:hover:bg-red-300 dark:border-gray-600 ">
                                 <svg class="w-4 h-4 mr-2" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                                     viewBox="0 0 200 300" width="1667" height="2500">
                                     <style type="text/css">
@@ -93,7 +93,7 @@
                     </div>
                 </div>
             </section>
-            <section class="bg-white dark:bg-gray-900 rounded-b-lg">
+            <section class="bg-white rounded-b-lg dark:bg-gray-900">
                 <div class="max-w-screen-xl px-4 py-8 mx-auto space-y-12 lg:space-y-20 lg:py-24 lg:px-6">
                     <!-- Row -->
                     <div class="items-center gap-8 lg:grid lg:grid-cols-2 xl:gap-16">

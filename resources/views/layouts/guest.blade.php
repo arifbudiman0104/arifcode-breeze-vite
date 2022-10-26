@@ -28,13 +28,13 @@
 
     <!-- Page Heading -->
     @if (isset($header))
-    <header class="bg-white dark:bg-slate-900 shadow">
-        <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+    <header class="bg-white shadow dark:bg-slate-900">
+        <div class="px-4 py-6 mx-auto max-w-7xl sm:px-6 lg:px-8">
             {{ $header }}
         </div>
     </header>
     @endif
-    <div class="font-sans text-gray-900  antialiased">
+    <div class="font-sans antialiased text-gray-900">
         {{ $slot }}
 
 
