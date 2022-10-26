@@ -5,8 +5,49 @@
         </h2>
     </x-slot>
 
+
     <div class="py-5">
         <div class="mx-auto max-w-7xl sm:px-6 lg:px-8 ">
+            {{-- <section class="pt-24 overflow-hidden pb-36">
+                <div class="container px-4 mx-auto">
+                    <h2 class="mb-4 text-6xl font-bold leading-tight text-center dark:text-white md:text-7xl font-heading tracking-px-n">Latest
+                        from Blog</h2>
+                    <p class="mx-auto mb-24 font-medium leading-relaxed text-center text-gray-600 md:max-w-lg">Lorem ipsum dolor
+                        sit amet, to the consectr adipiscing elit. Volutpat tempor to the condimentum vitae vel purus.</p>
+                    <div class="flex flex-wrap -m-8">
+                        <div class="w-full p-8 md:w-1/2">
+                            <div class="flex flex-wrap -m-4 lg:items-center">
+                                <div class="w-auto p-4">
+                                    <div class="overflow-hidden rounded-xl">
+                                        <img class="h-40 transition duration-1000 ease-in-out transform hover:scale-105"
+                                            src="{{ asset('img/3.jpg') }}" alt="">
+                                    </div>
+                                </div>
+                                <div class="flex-1 p-4">
+                                    <div class="md:max-w-xs">
+                                        <div class="flex flex-col justify-between h-full">
+                                            <div class="mb-6">
+                                                <p class="mb-1.5 text-sm text-gray-500 font-medium uppercase tracking-px">
+                                                    Product</p>
+                                                <a class="inline-block hover:text-gray-800 hover:underline" href="#">
+                                                    <h3 class="text-xl font-semibold leading-normal dark:text-white">An IT services company that
+                                                        can grow your business</h3>
+                                                </a>
+                                            </div>
+                                            <div class="flex flex-wrap items-center -m-1">
+
+                                                <div class="w-auto p-1">
+                                                    <p class="text-sm font-semibold leading-relaxed dark:text-white">by Wade Warren</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> --}}
             {{-- <div class="mb-5 overflow-hidden bg-white shadow-sm dark:bg-slate-700 sm:rounded-lg">
                 <div
                     class="p-6 bg-white border-b border-gray-200 dark:bg-slate-700 dark:text-white dark:border-slate-600">
@@ -46,20 +87,21 @@
             <div class="grid w-full grid-cols-1 gap-5 mb-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                 @foreach ($posts as $post )
                 <div
-                    class="w-full overflow-hidden bg-white shadow hover:shadow-md dark:bg-gray-900 sm:rounded-md md:rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+                    class="w-full overflow-hidden bg-white shadow hover:shadow-md dark:bg-gray-900 sm:rounded-md md:rounded-lg ">
                     <img class="object-cover w-full h-48" src="{{ asset('img/3.jpg') }}" alt="Flower and sky" />
 
 
                     <div class="relative p-4">
                         <div class="mb-2">
-                            <span class="px-2 py-1 mr-2 text-xs font-semibold text-red-800 bg-red-100 rounded dark:bg-red-200 dark:text-red-900">
+                            <span
+                                class="px-2 py-1 mr-2 text-xs font-semibold text-red-800 bg-red-100 rounded dark:bg-red-200 dark:text-red-900">
                                 {{
                                 $post->category->name }}
                             </span>
 
                         </div>
                         <a href="/post/{{ $post->slug }}"
-                            class="text-lg font-bold text-gray-800 md:text-xl dark:text-white hover:text-red-400">{{
+                            class="text-lg font-bold text-gray-800 md:text-xl dark:text-white hover:underline hover:text-red-400">{{
                             $post->title }}</a>
 
 
@@ -67,7 +109,8 @@
                                 href="/posts?author={{$post->author->username}}" class="hover:text-red-400"> {{
                                 $post->author->name
                                 }}</a>
-                            <span class="inline-flex items-center px-2 py-1 ml-2 text-xs font-semibold text-gray-900 bg-gray-100 rounded dark:bg-gray-700 dark:text-gray-300">
+                            <span
+                                class="inline-flex items-center px-2 py-1 ml-2 text-xs font-semibold text-gray-900 bg-gray-100 rounded dark:bg-gray-700 dark:text-gray-300">
                                 <svg aria-hidden="true" class="w-3 h-3 mr-1" fill="currentColor" viewBox="0 0 20 20"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd"
@@ -82,7 +125,7 @@
 
 
 
-                        <p class="text-sm text-gray-600  md:text-base dark:text-white">
+                        <p class="text-sm text-gray-600 md:text-base dark:text-white">
                             {{$post->excerpt}}
                         </p>
                         <a href="/post/{{ $post->slug }}" class="inline-block mt-6 text-red-500 hover:text-red-400">

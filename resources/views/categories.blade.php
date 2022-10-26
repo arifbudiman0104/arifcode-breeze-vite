@@ -13,8 +13,8 @@
                     @foreach ($categories as $category )
                     <div>
                         <a href="/posts?category={{$category->slug}}"
-                            class="block max-w-md p-6 mx-auto bg-white border rounded-lg shadow-md h-44 hover:bg-gray-100 dark:bg-gray-900 dark:border-gray-800 dark:hover:bg-gray-700">
-                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 hover:text-red-400 dark:text-white">{{
+                            class="block max-w-md p-6 mx-auto bg-white border rounded-lg shadow-md h-44 dark:bg-gray-900 dark:border-gray-800 ">
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 hover:underline hover:text-red-400 dark:text-white">{{
                                 $category->name }}</h5>
                             <p class="font-normal text-gray-700 dark:text-gray-400">{{
                                 $category->description }}</p>
